@@ -1,38 +1,108 @@
 .App {
+  width: 100vh;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #2f4050;
+  transition: left;
+  position: fixed;
+  overflow: auto;
+}
+
+.SidebarList {
+  width: 100%;
+  padding: 0;
+}
+
+.SidebarList .row {
+  width: 100%;
+  height: 50px;
+  text-decoration: none;
+
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.Sidebar .row:hover {
+  cursor: pointer;
+  background-color: #293846;
+}
+
+.SidebarList #active {
+  background-color: #293846;
+}
+
+.content {
+  position: absolute;
+  left: 255px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+
+  /* grayscale / bg */
+
+  background: #f7f8fc;
+}
+
+.tr_center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table_style {
+  border: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table_toppad {
+  padding-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content_frame {
+  position: absolute;
+  height: 942px;
+  left: 287px;
+  right: 31px;
+  top: 119px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.App-link {
-  color: #61dafb;
+.header_frame {
+  position: absolute;
+  height: 44px;
+  left: 285px;
+  right: 33px;
+  top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first_table {
+  height: 308px;
+  left: 283px;
+  right: 77px;
+  top: 180px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.second_table {
+  height: 308px;
+  left: 283px;
+  right: 77px;
+  top: 582px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
