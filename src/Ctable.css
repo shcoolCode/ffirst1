@@ -1,0 +1,144 @@
+.table_name1 {
+  position: fixed;
+  height: 24px;
+  left: -500px;
+  right: 100px;
+  top: 32px;
+
+  /* Bold 19 (0.4 px) */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  /* identical to box height */
+
+  letter-spacing: 0.4px;
+
+  /* grayscale / black */
+
+  color: #252733;
+}
+
+.sort1 {
+  position: absolute;
+  width: 53px;
+  height: 20px;
+  left: 250px;
+  top: 37px;
+  color: #252733;
+}
+
+.filter1 {
+  position: absolute;
+  width: 58px;
+  height: 20px;
+  left: 300px;
+  top: 37px;
+  color: #252733;
+}
+
+.table_top {
+  position: absolute;
+  height: 30px;
+  left: 1px;
+  right: 1px;
+  top: 104px;
+}
+
+.student_attibute1 {
+  position: absolute;
+  height: 0px;
+  left: -300px;
+  right: 0px;
+  top: 0px;
+
+  /* Bold 14 (0.2 px) */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  /* grayscale / gray */
+
+  color: #9fa2b4;
+}
+
+.student_attibute2 {
+  position: absolute;
+  left: -200px;
+  height: 0px;
+  right: 0px;
+  top: 0px;
+
+  /* Bold 14 (0.2 px) */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  /* grayscale / gray */
+
+  color: #9fa2b4;
+}
+
+.student_attibute3 {
+  position: absolute;
+  height: 0px;
+  left: 0px;
+  right: -100px;
+  top: 0px;
+
+  /* Bold 14 (0.2 px) */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  /* grayscale / gray */
+
+  color: #9fa2b4;
+}
+
+.student_attibute4 {
+  position: absolute;
+  height: 0px;
+  height: 0px;
+  right: -200px;
+  top: 0px;
+
+  /* Bold 14 (0.2 px) */
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height */
+
+  letter-spacing: 0.2px;
+
+  /* grayscale / gray */
+
+  color: #9fa2b4;
+}
+
+.button_color {
+  color: #475dd4;
+}

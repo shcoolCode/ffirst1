@@ -26,7 +26,10 @@ function Sidebar() {
 
   return (
     <div className="Sidebar">
-      <div>멤버관리</div>
+      <div className="sidebar_admin_title">김상우 님</div>
+      <br></br>
+      <br></br>
+      <div className="sidebar_line_name">멤버관리</div>
       <ul className="SidebarList">
         {menus.map((menu, index) => {
           return (
@@ -41,7 +44,7 @@ function Sidebar() {
       </ul>
 
       <ul className="SidebarList">
-        <div>명단관리</div>
+        <div className="sidebar_line_name">명단관리</div>
         {menus1.map((menu, index) => {
           return (
             <Link to={menu.path} key={index} className="row">

@@ -1,75 +1,113 @@
 import React from "react";
 import "../App.css";
+import "../Cstudent.css";
+import TableRow from "@material-ui/core/TableRow";
+import TableCell from "@material-ui/core/TableCell";
+import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead";
+import TableBody from "@material-ui/core/TableBody";
+import StudentContent from "./StudentContent";
+import "../Ctable.css";
+const new_students = [
+  {
+    number: 1,
+    id: "mrk211",
+    name: "김상우",
+    date: "2019/02/03",
+    admit: "승인",
+  },
+  {
+    number: 2,
+    id: "fkfkf",
+    name: "김도윤",
+    date: "2018/02/03",
+    admit: "승인",
+  },
+];
 
-function Student() {
-  return (
-    <div className="content">
-      <header className="header_frame">학생 정보 관리</header>
-      <div className="content_frame">
-        <div className="first_table">
-          <h1>학생 승인 요청</h1>
+const origin_students = [
+  {
+    number: 1,
+    id: "vbvfvd144",
+    name: "문예림",
+    date: "2019/02/03",
+    admit: "제거",
+  },
+  {
+    number: 2,
+    id: "gkvkmbm90",
+    name: "김수진",
+    date: "2018/02/03",
+    admit: "제거",
+  },
+];
 
-          <table border="3" className="table_style">
-            <th>반</th>
-            <th>이름</th>
-            <th>핸드폰 번호</th>
-            <th>승인</th>
-            <tr className="tr_center">
-              <td>5</td>
-              <td>김상우</td>
-              <td>01046276266</td>
-              <button>확인</button>
-            </tr>
+class Student extends React.Component {
+  render() {
+    return (
+      <div className="content">
+        <header className="header_frame">
+          <text className="header_frame_title">학생 관리</text>
+        </header>
 
-            <tr className="tr_center">
-              <td>6</td>
-              <td>김도윤</td>
-              <td>01046276266</td>
-              <button>확인</button>
-            </tr>
-
-            <tr className="tr_center">
-              <td>7</td>
-              <td>김예림</td>
-              <td>01049325555</td>
-              <button>확인</button>
-            </tr>
-          </table>
+        <div className="content_frame">
+          <div>신청명단</div>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>번호</TableCell>
+                <TableCell>이름</TableCell>
+                <TableCell>아이디</TableCell>
+                <TableCell>날짜</TableCell>
+                <TableCell>승인</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {new_students.map((c) => {
+                return (
+                  <StudentContent
+                    number={c.number}
+                    name={c.name}
+                    id={c.id}
+                    date={c.date}
+                    admit={c.admit} //버튼기능 넣는법
+                  />
+                );
+              })}
+            </TableBody>
+          </Table>
         </div>
 
-        <div className="second_table">
-          <h1>기존유저</h1>
-
-          <table border="3" className="table_style">
-            <th>반</th>
-            <th>이름</th>
-            <th>핸드폰 번호</th>
-            <th>제거</th>
-            <tr className="tr_center">
-              <td>5</td>
-              <td>홍석용</td>
-              <td>01046276266</td>
-              <button>제거</button>
-            </tr>
-
-            <tr className="tr_center">
-              <td>6</td>
-              <td>박원용</td>
-              <td>01046276266</td>
-              <button>제거</button>
-            </tr>
-
-            <tr className="tr_center">
-              <td>7</td>
-              <td>문재인</td>
-              <td>01049325555</td>
-              <button>제거</button>
-            </tr>
-          </table>
+        <div className="content_frame2">
+          <div>등록명단</div>
+          <Table>
+            <TableHead>
+              <TableRow>
+                <TableCell>번호</TableCell>
+                <TableCell>이름</TableCell>
+                <TableCell>아이디</TableCell>
+                <TableCell>날짜</TableCell>
+                <TableCell>제거</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {origin_students.map((c) => {
+                return (
+                  <StudentContent
+                    number={c.number}
+                    name={c.name}
+                    id={c.id}
+                    date={c.date}
+                    admit={c.admit} //버튼기능 넣는법
+                  />
+                );
+              })}
+            </TableBody>
+          </Table>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Student;

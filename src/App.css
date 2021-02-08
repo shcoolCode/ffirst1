@@ -1,6 +1,7 @@
 .App {
-  width: 100vh;
-  height: 100vh;
+  position: relative;
+  width: 1440px;
+  height: 1100px;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
 }
 
 .Sidebar {
+  position: absolute;
   height: 100vh;
   width: 250px;
   background-color: #2f4050;
@@ -56,7 +58,7 @@ body {
 
   /* grayscale / bg */
 
-  background: #f7f8fc;
+  background: #ebebeb;
 }
 
 .tr_center {
@@ -73,36 +75,88 @@ body {
 
 .content_frame {
   position: absolute;
-  height: 942px;
-  left: 287px;
-  right: 31px;
+  height: 1000px;
+  left: 0px;
+  right: 0px;
   top: 119px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.content_frame2 {
+  position: absolute;
+  height: 1000px;
+  left: 0px;
+  right: 0px;
+  top: 500px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header_frame {
-  position: absolute;
+  position: fixed;
   height: 44px;
   left: 285px;
   right: 33px;
   top: 30px;
 }
 
+.header_frame_title {
+  position: absolute;
+  height: 34px;
+  left: 0px;
+  right: 351px;
+  top: calc(50% - 34px / 2 + 1px);
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+
+  /* grayscale / black */
+
+  color: #252733;
+}
+
 .first_table {
+  position: absolute;
   height: 308px;
   left: 283px;
   right: 77px;
   top: 180px;
+  color: #f7f8fc;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .second_table {
+  position: absolute;
   height: 308px;
   left: 283px;
   right: 77px;
   top: 582px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.sidebar_admin_title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: center;
+  /* identical to box height */
+
+  letter-spacing: 0.4px;
+
+  /* sidebar / gray */
+
+  color: #a4a6b3;
+  opacity: 0.7;
+}
+.sidebar_line_name {
+  /* 멤버관리 ,명단관리 색깔 나타냄*/
+  color: #f7f8fc;
 }
