@@ -2,15 +2,15 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
-import Home from "./pages/Home";
-import Student from "./pages/Student";
-import Parent from "./pages/Parent";
-import Teacher from "./pages/Teacher";
-import Absent from "./pages/Absent";
+import Home from "./pages/homepage/Home";
+import Student from "./pages/studentpage/Student";
+import Parent from "./pages/parentpage/Parent";
+import Teacher from "./pages/teacherpage/Teacher";
+import Absent from "./pages/absentpage/Absent";
 import Adminss from "./pages/Adminss";
-import Festival from "./pages/Festival";
+import Festival from "./pages/festivalpage/Festival";
 import Fire from "./pages/Fire";
-import Library from "./pages/Library";
+import Library from "./pages/librarypage/Library";
 import Question from "./pages/Question";
 
 function App() {

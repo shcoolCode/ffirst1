@@ -1,13 +1,13 @@
 import React from "react";
-import "../App.css";
-import "../Cstudent.css";
+import "../../App.css";
+import "./Cstudent.css";
 import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import Table from "@material-ui/core/Table";
 import TableHead from "@material-ui/core/TableHead";
 import TableBody from "@material-ui/core/TableBody";
 import StudentContent from "./StudentContent";
-import "../Ctable.css";
+import "../../Ctable.css";
 const new_students = [
   {
     number: 1,
